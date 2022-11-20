@@ -1,6 +1,9 @@
 package com.github.jin;
 
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class Menu {
     /*
@@ -12,5 +15,13 @@ public class Menu {
     메뉴판이 필하다..? 따라서 .. 메뉴판클래스를 만들어보자..해서 생긴게..
     Menetem클래스..
      */
-    private List<MenuItem> menuItemList;
+    private final List<MenuItem> menuItemList= new ArrayList<>();
+
+    public  Menu(){
+        this.menuItemList = add(new MenuItem("아메리카노",1000));
+    }
+    public  MenuItem getMenuItem(String menuName){
+    //for문돌리기?
+        return  new MenuItem("아아",1);
+    }
 }
